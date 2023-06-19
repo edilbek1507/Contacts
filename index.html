@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Contact Book</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="animate-charcter">Contact Book</h3>
+        </div>
+      </div>
+    </div>
+    <button class="reset-btn">Reset</button>
+    <form class="add-todo">
+      <input id="add-input" type="text" placeholder="Name:" />
+      <input id="add-input2" type="text" placeholder="Surname:" />
+      <input id="add-input3" type="number" placeholder="Phone number:" />
+      <input id="add-input4" type="url" placeholder="URL of image:" />
+      <button class="add" id="add-submit">Add</button>
+    </form>
+    <div id="todo-container"></div>
+
+    <div class="modal" id="edit-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Edit Contact</h3>
+          <button id="close-modal">X</button>
+        </div>
+        <input type="text" id="edit-input" />
+        <br />
+        <input type="text" id="edit-input2" />
+        <br />
+        <input type="number" id="edit-input3" />
+        <br />
+        <input type="url" id="edit-input4" />
+        <br />
+        <div class="modal-footer">
+          <button id="edit-cancel">Cancel</button>
+          <button class="edit-submit">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

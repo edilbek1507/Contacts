@@ -1,0 +1,182 @@
+* {
+  font-size: 105%;
+}
+
+body {
+  margin: 0;
+  background-image: url(https://i.redd.it/01sk42ne9rk61.jpg);
+}
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  color: #000000;
+}
+
+form {
+  width: 900px;
+  margin: 50px auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input {
+  width: 183px;
+  height: 50px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.722);
+}
+
+.todo-item {
+  color: #fff;
+  width: 888px;
+  height: 100px;
+  margin: 50px auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.462);
+}
+
+.btn-good {
+  width: 200px;
+}
+
+.add,
+.reset-btn,
+.edit-btn,
+.delete-btn {
+  padding: 10.5px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  margin-left: 10px;
+  color: #fff;
+  background-color: rgb(254, 72, 103);
+}
+
+.reset-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10.5px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#edit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.847);
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#close-modal {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#edit-cancel,
+.edit-submit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  margin-left: 10px;
+}
+.modal-header h3 {
+  background-color: #fff;
+}
+
+.modal-header {
+  background-color: #fff;
+}
+
+.modal-footer {
+  background-color: #fff;
+}
+
+#edit-cancel,
+.edit-submit {
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.image {
+  width: 100px;
+  border-radius: 20%;
+}
+
+/* Animation */
+
+.container {
+  text-align: center;
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #1e00ff 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 80px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
